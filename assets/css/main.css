@@ -2434,6 +2434,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			list-style: disc outside;
 		}
 
 		ul.alt {
@@ -3740,6 +3741,11 @@ input, select, textarea {
   .font-weight-bold {
 	font-weight: bold;
   }
+
+  .justify-text {
+	text-align: justify;
+  }
+  
 
 /* Footer */
 
