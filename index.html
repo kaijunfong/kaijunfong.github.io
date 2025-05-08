@@ -89,16 +89,16 @@
                 Observability and Artificial Intelligence Operations Intern
               </h2>
               <p class="description-job">
-                Interned as a Site Reliability Engineer, focusing on migration and initiating network monitoring for cybersecurity team.
+                Interned as a Site Reliability Engineer, focusing on consolidation of observability platfroms and initiating network monitoring for cybersecurity team.
               </p>
               <div class="row text-left">
-                <!-- <div class="col">
+                <div class="col">
                   <ul>
-                    <li>Completed Migration of SCOM and Prometheus into <b>Datadog</b>.</li>
-                    <li>Created monitors and dashbaords to track <b>SNMP</b>.</li>
-                    <li>
+                    <!-- <li>Completed Migration of SCOM and Prometheus into <b>Datadog</b>.</li> -->
+                    <li>Created monitors and dashbaords to track <b>Network Devices</b>.</li>
+                    <!-- <li>
                       Initiated <b>Universal Services Monitoring</b>.
-                    </li>
+                    </li> -->
                     <li>
                       Conducted <b>Synthetic and Real User Monitoring</b> acorss application teams.
                     </li>
@@ -106,7 +106,7 @@
                       Involved in LLM Observibility using <b>Arize.ai</b>.
                     </li>
                   </ul>
-                </div> -->
+                </div>
               </div>
             </div>
             
@@ -154,7 +154,7 @@
                 ><img src="images/nus.jpeg" alt="NUS Logo,  all rights to NUS"
               /></span>
               <h2 class="company-name">National University of Singapore</h2>
-              <h5 class="company-duration">Aug 2023 - Aug 2024</h5>
+              <h5 class="company-duration">Aug 2023 - May 2024</h5>
               <h4 class="company-duration">Skills: <b>R</b>, <b>Teaching</b></h4>
             </div>
             <div class="description">
@@ -176,8 +176,7 @@
                       Produced the top-scoring midterm student in my class.
                     </li>
                     <li>
-                      Achieved over 50% nominations from students for teaching
-                      awards.
+                      Awarded Honour List of Student Tutors in AY 2023/ 2024.
                     </li>
                   </ul>
                 </div>
@@ -189,7 +188,7 @@
                 ><img src="images/nus.jpeg" alt="NUS Logo,  all rights to NUS"
               /></span>
               <h2 class="company-name">National University of Singapore</h2>
-              <h5 class="company-duration">Aug 2023 - Present</h5>
+              <h5 class="company-duration">Aug 2023 - Dec 2024</h5>
               <h4 class="company-duration">
                 Skills: <b>SPSS</b>, <b>Confirmatory Factor Analysis</b>, <b>Regression Analysis</b>, <b>Mix-methods Research</b>
               </h4>
@@ -285,6 +284,35 @@
           >
             <div class="carousel-inner project-container">
               <div class="carousel-item active">
+                <div class="d-flex flex-column align-items-center project-item">
+                  <h3 class="description-title font-weight-bold">
+                    End-to-End Rental-Price Data Engineering Pipeline
+                  </h3>
+                  <p class="justify-text">
+                    As part of IS3107: Data Engineering, our team engineered a full-stack pipeline that predicts housing
+                    rents across Singapore. I led the <b>infrastructure-as-code</b> setup—provisioning BigQuery, Cloud Storage,
+                    and service accounts in <b>Google Cloud Platform</b> entirely through <b>Terraform</b>—and containerised
+                    <b>Apache Airflow</b> in a <b>Docker Compose</b> environment.
+                    Downstream, our team trained a Boosted Tree Regression in BigQuery ML (MAE ≈ <b>$941</b>, R² = <b>0.60</b>) and embedded the results in an
+                    interactive Tableau dashboard linked below. 
+                  </p>
+                  <ul class="actions special">
+                    <a
+                      href="https://github.com/kaijunfong/IS3107-Group-8"
+                      class="button"
+                      >Learn More</a
+                    >
+                  </ul>
+                  <ul class="actions special">
+                    <a
+                      href="https://public.tableau.com/app/profile/sok.yang.whang/viz/IS3107Group8Dashboard/OverallRentalLandscape"
+                      class="button"
+                      >View Our Dashboard</a
+                    >
+                  </ul>
+                </div>
+              </div>
+              <div class="carousel-item">
                 <div class="d-flex flex-column align-items-center project-item">
                   <h3 class="description-title font-weight-bold">
                     Movie Recommender System Using Machine Learning Algorithms
@@ -528,7 +556,7 @@
           </ul>
         </section>
         <p class="copyright">
-          &copy; Fong Kai Jun 2024: Adapted from a template by
+          &copy; Fong Kai Jun <span id="copyYear">(Oops There's a bug)</span>: Adapted from a template by
           <a href="https://html5up.net">HTML5 UP</a>.
         </p>
       </footer>
@@ -552,4 +580,8 @@
       link.setAttribute("target", "_blank");
     });
   });
+</script>
+
+<script>
+  document.getElementById('copyYear').textContent = new Date().getFullYear();
 </script>
